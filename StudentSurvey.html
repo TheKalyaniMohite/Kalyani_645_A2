@@ -1,0 +1,133 @@
+<!--Name: Kalyani Kishor Mohite
+G Number: G01460029
+Email: Kmohite@gmu.edu-->
+
+<!--This is a student survey form page-->
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .form-group {
+            margin-bottom: 16px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .form-group-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group-row div {
+            width: 48%;
+        }
+        .submit-buttons {
+            margin-top: 16px;
+        }
+        .submit-buttons input {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body class="w3-light-grey">
+
+    <div class="w3-container w3-center w3-seagreen">
+        <h1>Student Survey Form</h1>
+    </div>
+
+    <div class="w3-container w3-margin-top w3-card-4 w3-white">
+        <form class="w3-container" action="#" method="POST">
+            <!-- Personal Information -->
+            <h3>Personal Information</h3>
+
+            <div class="form-group-row">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input class="w3-input" type="text" id="firstname" name="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input class="w3-input" type="text" id="lastname" name="lastname" required>
+                </div>
+            </div>
+
+            <label for="street">Street Address</label>
+            <input class="w3-input form-group" type="text" id="street" name="street" required>
+
+            <div class="form-group-row">
+                <div>
+                    <label for="address1">Address Line 1</label>
+                    <input class="w3-input" type="text" id="address1" name="address1" required>
+                </div>
+                <div>
+                    <label for="address2">Address Line 2</label>
+                    <input class="w3-input" type="text" id="address2">
+                </div>
+            </div>
+
+            <div class="form-group-row">
+                <div>
+                    <label for="city">City</label>
+                    <input class="w3-input" type="text" id="city" name="city" required>
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <input class="w3-input" type="text" id="state" name="state" required>
+                </div>
+                <div>
+                    <label for="zip">Zip Code</label>
+                    <input class="w3-input" type="text" id="zip" name="zip" required>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <h3>Contact</h3>
+            <div class="form-group-row">
+                <div>
+                    <label for="phone">Mobile/Phone</label>
+                    <input class="w3-input" type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input class="w3-input" type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <!-- Survey Questions -->
+            <h3>Survey</h3>
+            <label>1. What did you like most about the Mason campus?</label><br>
+            <input type="checkbox" name="campuslike" value="Students"> Students<br>
+            <input type="checkbox" name="campuslike" value="Location"> Location<br>
+            <input type="checkbox" name="campuslike" value="Campus"> Campus<br>
+            <input type="checkbox" name="campuslike" value="Atmosphere"> Atmosphere<br>
+            <input type="checkbox" name="campuslike" value="Dorm rooms"> Dorm rooms<br>
+            <input type="checkbox" name="campuslike" value="Sports"> Sports<br>
+
+            <label>2. How did you become interested in Mason?</label><br>
+            <input type="radio" name="interest" value="Friends" required> Friends<br>
+            <input type="radio" name="interest" value="Television" required> Television<br>
+            <input type="radio" name="interest" value="Internet" required> Internet<br>
+            <input type="radio" name="interest" value="Other" required> Other<br>
+
+            <h3></h3>
+            <label for="surveydate">Date of Survey</label>
+            <input class="w3-input" type="date" id="surveydate" name="surveydate" required>
+
+            <!-- Submit and Cancel Buttons -->
+            <div class="submit-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+    </div>
+          <div style="text-align: center; margin-top: 20px;">
+        <a href="http://hw1-balancedminds.s3-website-us-east-1.amazonaws.com" target="_blank">Part 1 website</a>
+    </div>
+</body>
+</html>
